@@ -1,3 +1,13 @@
+/* CSS HEX */
+$xiketic: #0d0221ff;
+$midnight-blue: #0f084bff;
+$dark-cornflower-blue: #26408bff;
+$light-blue: #a6cfd5ff;
+$aero-blue: #c2e7d9ff;
+$footer-purple: #7d53de;
+$pink-salmon: #fcb0b3;
+$light-skin: #fcecc9;
+
 * {
     font-size: 16px;
     margin: 0;
@@ -8,19 +18,19 @@
 
 /* body::-webkit-scrollbar {
     width: 0.25rem;
-}
+} */
 
-body::-webkit-scrollbar-track {
-    background-color: #A6CFD5;
-}
+/* body::-webkit-scrollbar-track {
+    background-color: transparent;
+} */
 
-body::-webkit-scrollbar-thumb {
+/* body::-webkit-scrollbar-thumb {
     background-color: #0D0221;
 } */
 
 .landing {
     height: 700px;
-    background-color: #A6CFD5;
+    background-color: $light-blue;
 }
 
 /* ================
@@ -83,6 +93,11 @@ body::-webkit-scrollbar-thumb {
     transition: 0.5s;
 }
 
+.nav-links a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
 .header:hover .potterheads-title,
 .header:focus .potterheads-title,
 .header:active .potterheads-title{
@@ -129,29 +144,37 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     background-color: #26408B;
     box-shadow: -6px 6px 0 hsl(225, 57%, 18%);
 
     border-radius: 10px;
-    width: 500px;
+    width: min(500px, 90%);
     height: 500px;
-    margin: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     padding: 20px;
 }
 
 .featured-teapot-image {
     position: relative;
     display: flex;
+    justify-content: center;
 
-    width: 200px;
+    /* margin: 0 auto; */
+    width: min(200px, 95%);
     height: 365px;
 }
 
 #featured-image {
-    position: relative;
-    width: 220px;
-    margin: 10px;
+    /* object-fit: contain; */
+    /* position: relative; */
+    /* width: min(200px, 100%);
+    display: block; */
+    max-width: 100%;
+    max-height: 100%; 
+    /* margin: 10px; */
     border: solid 0 0 2px 2px hsl(225, 57%, 18%);
     border-radius: 10px;
     box-shadow: -6px 6px 0 hsl(225, 57%, 18%);
@@ -173,9 +196,10 @@ body::-webkit-scrollbar-thumb {
 .button-read {
     position: relative;
     display: inline-block;
-    font-size: 1rm;
+    font-size: max(1rm, 90vw);
     font-family: 'Rubik', sans-serif;
     font-weight: 600;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     color: hsl(225, 57%, 20%);
@@ -183,6 +207,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .button-read span {
+    color: hsl(225, 57%, 20%);
     position: relative;
     z-index: 2;
 }
@@ -208,7 +233,8 @@ body::-webkit-scrollbar-thumb {
 
 .about {
     height: 580px;
-    background-color: #FCB0B3;
+    background-color: $pink-salmon;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,9 +249,10 @@ body::-webkit-scrollbar-thumb {
     border: solid 2px #0d0221ff;
     border-radius: 3px;
     box-shadow: 0 4px 0 0 #0d0221ff;
-    width: 80%;
+    width: clamp(80%, 500px, 90%);
     height: 500px;
-    margin: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     padding: 20px;
 }
 
@@ -235,7 +262,7 @@ body::-webkit-scrollbar-thumb {
     flex-direction: row;
     align-items: center;
     /* border: solid 1px red; */
-    width: 50%;
+    width: 90%;
     height: 10%;
     padding: 10px 10px;
     margin: 15px 10px;
@@ -244,7 +271,7 @@ body::-webkit-scrollbar-thumb {
 .about-title span {
     position: relative;
     text-align: left;
-    font-size: 30px;
+    font-size: min(2.5rem, 9vw);
     font-weight: 700;
     font-family: 'Rubik', sans-serif;
     text-transform: uppercase;
@@ -256,13 +283,13 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     /* border: solid 1px red; */
     width: auto;
-    height: 50%;
+    height: 60%;
     padding: 5px 10px;
     margin: 15px 10px;
 }
 
 .about-text p {
-    font-size: 17px;
+    font-size: min(1.2rem, 3.9vw);
 }
 
 .about-button-container {
@@ -271,7 +298,7 @@ body::-webkit-scrollbar-thumb {
     right: 30px;
     bottom: 40px;
 
-    width: auto;
+    width: min(auto, 80%);
     border: solid 1px #0d0221ff;
     box-shadow: 0 3px 0 0 hsl(225, 57%, 18%);
     border-radius: 30px;
@@ -282,18 +309,19 @@ body::-webkit-scrollbar-thumb {
 .about-button {
     position: relative;
     display: inline-block;
-    font-size: 1rm;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 2px;
+    
     transition: all 0.8s;
 }
 
 .about-button span {
     position: relative;
     z-index: 1000;
+    font-size: min(1rem, 4vw);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: min(2px, 0.3vw);
 }
 
 .about-button-container:hover,
@@ -314,6 +342,146 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+/* ================
+    FOOTER
+=================== */
+
+.footer {
+    height: 580px;
+    background-color: $light-skin;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: auto;
+}
+
+.footer-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "soc soc img"
+        "links cpright img"
+        "links cpright img";
+    grid-gap: 0.5rem;
+
+    background-color: #7d53de;
+    border-radius: 7px;
+    box-shadow: 6px 8px 7px 0 rgba(0, 0, 0, 0.5);
+
+    width: 95%;
+    height: 460px;
+    margin-top: 90px;
+    padding: 20px;
+}
+
+.social-media {
+    grid-area: soc;
+    border: solid 1px red;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "join join join join join"
+        "line ig twt yt dc";
+}
+    #join-us {
+        grid-area: join;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px white;
+    }
+
+        #join-us span {
+            color: white;
+            font-size: min(1.5rem, 5vw);
+            font-weight: 700;
+            text-align: center;
+            text-shadow: 3px 3px 0 rgba(0,0,0,0.3);
+        }        
+
+    #line-cont {
+        grid-area: line;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px red;
+    }
+        #line-icon {
+            border: solid 1px black;
+            border-radius: 50%;
+        }
+
+    #ig-cont {
+        grid-area: ig;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px red;
+    }
+
+    #twt-cont {
+        grid-area: twt;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px red;
+    }
+
+    #yt-cont {
+        grid-area: yt;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px red;
+    }
+
+    #dc-cont {
+        grid-area: dc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px red;
+    }
+
+.copyright {
+    grid-area: cpright;
+    border: solid 1px red;
+}
+
+.site-links {
+    grid-area: links;
+    border: solid 1px red;
+}
+
+.footer-image {
+    grid-area: img;
+    border: solid 1px red;
+}
+
+@media only screen and (max-width: 720px){
+    /* .footer-container {
+        position: relative;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.75fr 1.5fr 0.75fr;
+        grid-template-areas: 
+            "soc"
+            "links"
+            "cpright";
+
+        height: 500px;
+        margin-top: 50px;
+    } */
+
+    .footer-image {
+        display: none;
+    }
+}
 
 /* ================
     COLOURS
@@ -324,9 +492,3 @@ a:visited {
     text-decoration: none;
 }
 
-/* CSS HEX */
---xiketic: #0d0221ff;
---midnight-blue: #0f084bff;
---dark-cornflower-blue: #26408bff;
---light-blue: #a6cfd5ff;
---aero-blue: #c2e7d9ff;
