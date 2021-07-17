@@ -1,7 +1,7 @@
 # Hello!
 
-This is my first time ever creating a website completely from scratch. I first learned HTML/CSS a year ago now, but never made my own project.
-So I thought, why not make one for Potterheads OC? Of course I had a lot of help and inspiration from Youtube tutorials and Google, but the design and "programming"
+This is my first time ever creating a website completely from scratch. I first learned HTML/CSS a year ago, but never made my own project.
+So I thought, why not make one for Potterheads? Of course I had a lot of help and inspiration from Youtube tutorials and Google, but the design and "programming"
 was all me. Sorry if it's not great. I'm still learning!
 
 ### Huge thanks to...
