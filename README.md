@@ -4,7 +4,7 @@ This is my first time ever creating a website completely from scratch. I first l
 So I thought, why not make one for Potterheads OC? Of course I had a lot of help and inspiration from Youtube tutorials and Google, but the design and "programming"
 was all me. Sorry if it's not great. I'm still learning!
 
-### Thank you to...
+### Huge thanks to...
 - [Kevin Powell](https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw) for the video on [min, max, clamp](https://youtu.be/U9VF-4euyRo). It was a *game-changer*.
 - [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA) for the [hamburger menu design](https://youtu.be/DZg6UfS5zYg).
 - [Code College](https://codecollege.ca/) for his [CSS-in-30-Days course](https://youtube.com/playlist?list=PLWKjhJtqVAbl1AfjiGyYxwpdAPi5v-1OU) on [FreeCodeCamp](https://www.youtube.com/c/Freecodecamp).
