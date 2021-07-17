@@ -19,31 +19,42 @@
 
     <!-- CSS Styles -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
     <div class="landing">
-        <section class="header">
-            <div class="potterheads-title">
-                POTTERHEADS OPENCHAT
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+                <div></div>
             </div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="">The Teapots</a></li>
+                            <li><a href="https://youtu.be/dQw4w9WgXcQ">Gallery</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <nav class="nav">
-                <ul class="nav-links">
-                    <li><a href="#" id="nav-link1">Home</a></li>
-                    <li><a href="about.html" id="nav-link2">About</a></li>
-                    <li><a href="teapots.html" id="nav-link3">The Teapots</a></li>
-                    <li><a href="gallery.html" id="nav-link4">Gallery</a></li>
-                </ul>
-            </nav>
+        <section class="header">
+            <div class="header-container header-inner">
+                <h1>Potterheads OpenChat</h1>
+            </div>
         </section>
 
         <section class="featured">
             <div class="featured-container">
                 <div class="featured-teapot-image">
-                    <img src="images/Vol14.png" alt="Latest Teapot Edition" id="featured-image">
+                    <img src="images/Vol14.png" href="pdfs/Vol14.pdf" id="featured-image" alt="Latest Teapot Edition" >
                 </div>
                 <div class="button-read-container">
-                    <a class="button-read">
+                    <a class="button-read" href="pdfs/Vol14.pdf">
                         <span>Read Here</span>
                     </a>
                 </div>
@@ -90,10 +101,10 @@
                 <div class="site-links">
                     <div class="link-title"><span>Site Links</span></div>
                     <div class="links-text">
-                        <li><a id="footer-about">About</a></li>
-                        <li><a id="footer-home">Home</a></li>
+                        <li><a id="footer-home" href="">Home</a></li>
+                        <li><a id="footer-about" href="about.html">About</a></li>
                         <li><a id="footer-teapot">The Teapots</a></li>
-                        <li><a id="footer-gallery">Gallery</a></li>
+                        <li><a id="footer-gallery" href="https://youtu.be/dQw4w9WgXcQ">Gallery</a></li>
                     </div>
                 </div>
                 <div class="copyright"> 
