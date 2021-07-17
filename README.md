@@ -7,7 +7,7 @@ So I thought, why not make one for Potterheads OC? Of course I had a lot of help
 was all me. Sorry if it's not great. I'm still learning!
 
 ### Thank you to...
-- [Kevin Powell](https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw), whose video on [min, max, clamp](https://youtu.be/U9VF-4euyRo) was a *game-changer*.
+- [Kevin Powell](https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw) for the video on [min, max, clamp](https://youtu.be/U9VF-4euyRo). It was a *game-changer*.
 - [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA) for the [hamburger menu design](https://youtu.be/DZg6UfS5zYg).
 - [Code College](https://codecollege.ca/) for his [CSS-in-30-Days course](https://youtube.com/playlist?list=PLWKjhJtqVAbl1AfjiGyYxwpdAPi5v-1OU) on [FreeCodeCamp](https://www.youtube.com/c/Freecodecamp).
 - [Fireship](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA) for the fantastic 100-second overview of [CSS Grid](https://youtu.be/uuOXPWCh-6o) and [Flexbox](https://youtu.be/K74l26pE4YA).
