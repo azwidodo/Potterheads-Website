@@ -65,7 +65,7 @@ body::-webkit-scrollbar-thumb {
 .header::before {
     position: absolute;
     content: "";;
-    background: url("/images/hogwarts.png") no-repeat center center/cover;
+    background: url("../images/hogwarts.png") no-repeat center center/cover;
     top: 0;
     left: 0;
     width: 100%;
@@ -181,7 +181,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .button-read:visited span {
-    color: inherit;
+    color: hsl(225, 57%, 20%);
 }
 
 .button-read-container:hover,
@@ -297,7 +297,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about-button a:visited > span {
-    color: inherit;
+    color: var(--xiketic);
 }
 
 .about-button-container:hover,
@@ -481,13 +481,14 @@ body::-webkit-scrollbar-thumb {
     }
 
     .links-text a {
+        color: var(--xiketic);
         font-size: min(1.1rem, 5vw);
         text-decoration: none;
         transition: ease-in 0.4s;
     }
 
     .links-text a:visited {
-        color: inherit;
+        color: var(--xiketic);
     }
 
     .links-text a:hover,

@@ -145,7 +145,7 @@
 }
 
 .menu-wrap .menu > div > div > ul > li > a:visited {
-    color: inherit;
+    color: var(--xiketic);
     text-decoration: none;
 }
 
